@@ -1,4 +1,4 @@
-bread = 4
+bread = 8
 peanut_butter = 3
 jelly = 4
 
@@ -6,12 +6,8 @@ if bread == 2 and peanut_butter == 1 and jelly == 1:
     print "I can make a sandwich"
 elif (bread > 2) and (peanut_butter > 1) and (jelly > 1):
     if (bread / 2) <= peanut_butter and (bread / 2) <= jelly:
-        print "I can make at least", bread ,"sandwiches"
-    if (bread / 2) <= peanut_butter or (bread / 2) <= jelly:
-        print "I can make at least", bread ,"sandwiches"
+        print "I can make at least", (bread / 2) ,"sandwiches"
     elif peanut_butter <= (bread / 2) and peanut_butter <= jelly:
-        print "I can make at least", peanut_butter ,"sandwiches"
-    elif peanut_butter <= (bread / 2) or peanut_butter <= jelly:
         print "I can make at least", peanut_butter ,"sandwiches"
     else:
         print "I can make at least", jelly ,"sandwiches"
