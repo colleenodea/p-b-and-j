@@ -1,0 +1,18 @@
+bread = 9
+peanut_butter = 5
+jelly = 6
+
+if bread == 2 and peanut_butter == 1 and jelly == 1:
+    print "I can make a sandwich"
+elif (bread > 2) and (peanut_butter > 1) and (jelly > 1):
+    if (bread / 2) <= peanut_butter and (bread / 2) <= jelly:
+        print "I can make at least", (bread / 2) ,"sandwiches"
+    elif peanut_butter <= (bread / 2) and peanut_butter <= jelly:
+        print "I can make at least", peanut_butter ,"sandwiches"
+    else:
+        print "I can make at least", jelly ,"sandwiches"
+else: 
+    print "No lunch today"
+if (bread % 2) == 1 and (bread / 2)  < peanut_butter and (bread / 2) < jelly:
+    print "You can make an open face sandwich, too."
+	
