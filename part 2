@@ -1,0 +1,10 @@
+bread = 4
+peanut_butter = 3
+jelly = 2
+
+if bread == 2 and peanut_butter == 1 and jelly == 1:
+    print "I can make a sandwich"
+elif bread > 2 and peanut_butter > 1 and jelly >1:
+    print "I can make at least", bread / 2 ,"sandwiches"
+else: 
+    print "No lunch today"
