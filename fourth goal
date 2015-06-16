@@ -1,0 +1,29 @@
+bread = 9
+peanut_butter = 5
+jelly = 2
+
+#first goal
+if bread == 2 and peanut_butter == 1 and jelly == 1:
+    print "I can make a sandwich."
+#second goal
+elif (bread > 2) and (peanut_butter > 1) and (jelly > 1):
+    if (bread / 2) <= peanut_butter and (bread / 2) <= jelly:
+        print "I can make at least", (bread / 2) ,"sandwiches"
+    elif peanut_butter <= (bread / 2) and peanut_butter <= jelly:
+        print "I can make at least", peanut_butter ,"sandwiches"
+    else:
+        print "I can make at least", jelly ,"sandwiches"
+#third goal ... this is where code is breaking
+elif (bread % 2) == 1 and (peanut_butter >= 1) and (jelly >= 1):
+    print "I can make an open face sandwich, too."
+#fourth goal
+elif (jelly == 0):
+    print "I can make a peanut butter sandwich."
+elif (peanut_butter > jelly):
+    if (bread / 2) >= peanut_butter:
+        print "I can make", jelly ,"peanut butter and jelly sandwiches and", peanut_butter - jelly ,"peanut butter sandwiches."
+    else:
+        print "I can make", jelly ,"peanut butter and jelly sandwiches and", (bread / 2) - jelly, "peanut butter sandwiches."
+else:
+    print "No lunch today."
+
